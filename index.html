@@ -1,12 +1,64 @@
-<!DOCTYPE>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="fi">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oma Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body><h1>Moikka!</h1>
-<p>Tämä on ensimmäinen sivuni.</p>
-<img src="assets/pictures/1605746.jpg" alt="Kuva" width="300" height="200">
+<body>
+    <!-- Navigaatio -->
+    <nav>
+        <ul>
+            <li><a href="#about">Tietoa minusta</a></li>
+            <li><a href="#projects">Projektit</a></li>
+            <li><a href="#contact">Ota yhteyttä</a></li>
+        </ul>
+    </nav>
+
+    <!-- Otsikko / Esittelyosio -->
+    <header>
+        <h1>Saku Kallioinen</h1>
+        <p>Web-kehittäjä ja suunnittelija</p>
+    </header>
+
+    <!-- Tietoa minusta -->
+     <section id="about">
+        <h2>Tietoa minusta</h2>
+        <p>Olen web-kehittäjä ja suunnittelija, joka on erikoistunut modernien ja responsiivisten verkkosivujen ja sovellusten kehittämiseen. Olen työskennellyt alalla yli 5 vuotta ja minulla on laaja kokemus erilaisista projekteista.</p>
+
+    <!-- Projektit -->
+    <section id="projects">
+        <h2>Projektit</h2>
+        <div class="project">
+            <h3>Projekti 1</h3>
+            <p>Kuvaus projektista.</p>
+        </div>
+        <div class="project">
+            <h3>Projekti 2</h3>
+            <p>Kuvaus projektista.</p>
+        </div>
+    </section>
+
+    <!-- Yhteystiedot -->
+    <section id="contact">
+        <h2>Ota yhteyttä</h2>
+        <form id="contactForm">
+            <label for="name">Nimi:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Sähköposti:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Viesti:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Lähetä</button>
+        </form>
+    </section>
+
+    <!-- Alatunniste -->
+    <footer>
+        <p>© 2024 Saku Kallioinen</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
