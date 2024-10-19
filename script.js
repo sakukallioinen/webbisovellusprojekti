@@ -18,6 +18,7 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         // Tyhjennetään lomake
         document.getElementById("contactForm").reset();
     }, function(error) {
-        alert("Virhe viestin lähetyksessä, yritä uudelleen.");
+        console.error("Virhe viestin lähetyksessä:", error); // Lokita virhe
+        alert("Virhe viestin lähetyksessä: " + JSON.stringify(error));
     });
 });
