@@ -40,7 +40,7 @@ header {
 }
 /* Tietoa minusta taustakuva */
 .about-background {
-    background-image: url('../assets/pictures/omakuva.jpeg'); /* Replace with the path to your image */
+    background-image: url('../assets/pictures/omakuva.JPEG'); /* Replace with the path to your image */
     background-size: cover; /* Make the background cover the entire area */
     background-position: center; /* Center the background image */
     padding: 50px; /* Add padding */
