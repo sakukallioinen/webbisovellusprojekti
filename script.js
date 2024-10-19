@@ -1,7 +1,6 @@
-// script.js
-
+// Kuuntele lomakkeen lähetyspainiketta
 document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // Estää lomakkeen lähetyksen
+    event.preventDefault(); // Estää lomakkeen automaattisen lähetyksen
 
     // Hae lomakkeen tiedot
     const name = document.getElementById("name").value;
@@ -14,14 +13,11 @@ document.getElementById("contactForm").addEventListener("submit", function(event
         email: email,
         message: message
     })
-
-    // Tarkista, että kaikki kentät ovat täytetty
-    if (name && email && message) {
+    .then(function(response) {
         alert("Kiitos, viestisi on lähetetty!");
-        setTimeout(() => {
-            alert("Tämä viesti katoaa nyt.");
-        }, 2000); // Alert will disappear after 2 seconds
-    } else {
-        alert("Täytä kaikki kentät ennen lähettämistä.");
-    }
+        // Tyhjennetään lomake
+        document.getElementById("contactForm").reset();
+    }, function(error) {
+        alert("Virhe viestin lähetyksessä, yritä uudelleen.");
+    });
 });

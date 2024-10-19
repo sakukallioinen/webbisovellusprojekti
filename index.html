@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oma Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- EmailJS:n kirjaston lataus -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        // EmailJS alustaminen omalla käyttäjätunnuksellasi
+        (function(){
+            emailjs.init("E74kbrdvZ09G1t2I3");  // Korvaa tämä omalla EmailJS käyttäjätunnuksellasi
+        })();
+    </script>
 </head>
 <body>
     <!-- Navigaatio -->
@@ -23,9 +32,10 @@
     </header>
 
     <!-- Tietoa minusta -->
-     <section id="about">
+    <section id="about">
         <h2>Tietoa minusta</h2>
         <p>Olen web-kehittäjä ja suunnittelija, joka on erikoistunut modernien ja responsiivisten verkkosivujen ja sovellusten kehittämiseen. Olen työskennellyt alalla yli 5 vuotta ja minulla on laaja kokemus erilaisista projekteista.</p>
+    </section>
 
     <!-- Projektit -->
     <section id="projects">
