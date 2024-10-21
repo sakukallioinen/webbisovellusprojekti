@@ -76,7 +76,7 @@ async function fetchRepo(repoId, owner, repoName, descriptionElementId) {
 
 // Hakee projektitiedot ja asettaa ne kuvauskohtiin
 function fetchProjects() {
-    //fetchRepo(1, 'sakukallioinen', 'profilesapp', 'project1-description');  // Ensimmäinen projekti
+    fetchRepo(1, 'sakukallioinen', 'spedenspelit', 'project1-description');  // Ensimmäinen projekti
     fetchRepo(2, 'sakukallioinen', 'pankkiautomaatti', 'project2-description');  // Toinen projekti
 }
 
