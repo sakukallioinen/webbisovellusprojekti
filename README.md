@@ -20,4 +20,10 @@ JavaScript Basics
 2. Multiple event listeners and basic DOM manipulations. script.js listen for the submission of the contact form. If it's been less than 5 minutes since the last submission, an alert is shown, and the submission is blocked. From row 4
 After successful submission, the form is reset, and the lastSubmissionTime is updated. Rows 31 and 34 script.js
 3. Use of arrays, objects, and functions. no arrays but objects and functions e.g. on rows 52 and 45 and 78
-4. Advanced logic, looping through data, and dynamic DOM updates. 
+4. Advanced logic, looping through data, and dynamic DOM updates. Cooldown timer for form submission from row 1. Dynamically update the DOM after fetching data from GitHub and when handling the form submission, from row 55 script.js
+
+Asynchronous operations
+1. Use of timers. script.js first rows, 5 minute timer for submitting the form
+2. Successful implementation of an AJAX call or Fetch. script.js from row 45
+3. Data from the asynchronous call is displayed on the webpage. Same as above
+4. Error handling is implemented (for failed API calls, etc.). script.js row 69
