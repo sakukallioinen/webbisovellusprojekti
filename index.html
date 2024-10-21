@@ -23,7 +23,7 @@
     <nav>
         <ul>
             <li><a href="#about">Tietoa minusta</a></li>
-            <li><a href="#projects">Projektit</a></li>
+            <li><a href="#projects-section">Projektit</a></li>
             <li><a href="#skills">Taitoja</a></li>
             <li><a href="#contact">Ota yhteyttä</a></li>
         </ul>
@@ -44,15 +44,17 @@
     </section>
 
     <!-- Projektit -->
-    <section id="projects">
+     <section id="projects-section">
         <h2>Projektit</h2>
+    <div id="projects">
         <div class="project">
             <h3>Tietotekniikan sovellusprojekti</h3>
-            <p>Kuvaus projektista.</p>
+            <p>Speden Spelit</p>
         </div>
         <div class="project">
             <h3>Ohjelmistokehityksen sovellusprojekti</h3>
-            <p>Kuvaus projektista.</p>
+            <p id="project2-description"></p>
+        </div>
         </div>
     </section>
 
@@ -111,6 +113,7 @@
             <textarea id="message" name="message" required></textarea>
             <button type="submit">Lähetä</button>
         </form>
+        <div id="feedback" style="color: red;"></div> <!-- Virheilmoitus -->
     </section>
 
     <!-- Alatunniste -->

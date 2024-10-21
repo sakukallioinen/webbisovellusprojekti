@@ -40,16 +40,17 @@ header {
 }
 /* Tietoa minusta taustakuva */
 .about-background {
-    background-image: url('../assets/pictures/omakuva.JPEG'); /* Replace with the path to your image */
+    background-image: url('../assets/pictures/omakuva.JPEG');
     background-size: cover; /* Make the background cover the entire area */
     background-position: center; /* Center the background image */
-    padding: 50px; /* Add padding */
+    background-position-y: 40%; 
+    background-repeat: none;
+    padding: 50px; 
     color: white; /* Change text color to white for better contrast */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Add shadow for better readability */
     position: relative; /* Allow for better positioning */
 }
 
-/* Optional: Add a semi-transparent overlay for better text readability */
 .about-background::before {
     content: '';
     position: absolute;
@@ -57,8 +58,8 @@ header {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-    z-index: 0; /* Make sure overlay is behind the text */
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0; 
 }
 
 .about-background h2, .about-background p {
@@ -68,12 +69,17 @@ header {
 
 
 /* Projektit */
+#projects-section {
+    padding: 50px;
+    text-align: center;
+}
 #projects {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
     padding: 50px;
     text-align: center;
+    justify-content: center;
 }
 .project {
     background-color: rgb(255, 255, 255);
@@ -91,10 +97,10 @@ header {
 /* Taulukko tyylit */
 table {
     width: 100%;
-    max-width: 800px; /* Max width for larger screens */
+    max-width: 800px; 
     margin: 0 auto; /* Center the table */
     border-collapse: collapse; /* Merge borders */
-    background-color: #fff; /* Table background */
+    background-color: #fff; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
 }
 
