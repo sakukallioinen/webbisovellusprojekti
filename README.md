@@ -27,3 +27,5 @@ Asynchronous operations
 2. Successful implementation of an AJAX call or Fetch. script.js from row 45
 3. Data from the asynchronous call is displayed on the webpage. Same as above
 4. Error handling is implemented (for failed API calls, etc.). script.js row 69
+
+Bonus: contact form is fully operational
